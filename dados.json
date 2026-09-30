@@ -1,0 +1,16 @@
+{
+  "site_version": "3.0",
+  "checked": "2026-09-30",
+  "patch": {
+    "version": "7.3a",
+    "date": "2026-09-29",
+    "source": "Riot Games"
+  },
+  "korea": {
+    "tier": "Diamante",
+    "data_date": "2026-09-27",
+    "updated": "2026-09-28 11:10 KST",
+    "source": "RiftCamp"
+  },
+  "note": "Os dados coreanos são anteriores ao patch 7.3a; não apresentar como meta pós-patch consolidado."
+}

@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#090d14">
+<title>Wild Rift Meta — KR Insight</title>
+<style>
+:root{--bg:#090d14;--panel:#111824;--panel2:#151f2e;--line:#29364a;--text:#eef4ff;--muted:#8f9caf;--good:#7ee2a8;--warn:#f3cf76;--bad:#ff9292;--accent:#8eb7ff}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% -10%,#172238 0,#090d14 48%);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+header{padding:22px 16px 15px;position:sticky;top:0;z-index:20;background:rgba(9,13,20,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+h1{margin:0;font-size:23px}.sub{color:var(--muted);font-size:12px;margin-top:4px}
+nav{display:flex;gap:7px;overflow:auto;padding:10px 12px;position:sticky;top:76px;z-index:19;background:rgba(9,13,20,.9);backdrop-filter:blur(12px)}
+button{border:1px solid var(--line);background:var(--panel);color:#dbe6f7;border-radius:10px;padding:9px 12px;white-space:nowrap;cursor:pointer}
+button.active,button:hover{background:#26354c;border-color:#4d6484}
+main{max-width:850px;margin:auto;padding:14px}.section{display:none}.section.active{display:block}
+.hero{padding:17px;border:1px solid #33445e;border-radius:17px;background:linear-gradient(135deg,#172337,#101722);margin-bottom:12px}
+.hero h2{margin:0 0 7px}.notice,.card{background:rgba(17,24,36,.94);border:1px solid var(--line);border-radius:14px;padding:13px;margin-bottom:10px}
+.grid{display:grid;gap:10px}.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}.three{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.big{font-size:25px;font-weight:800}.good{color:var(--good)}.bad{color:var(--bad)}.warn{color:var(--warn)}
+.pill{display:inline-block;background:#1a2535;border:1px solid #2d3b51;border-radius:999px;padding:5px 8px;font-size:11px;margin:3px 3px 0 0;color:#cbd7e8}
+.filter{display:flex;gap:6px;overflow:auto;margin:10px 0}.source{font-size:11px;color:var(--muted);line-height:1.45;margin:7px 2px 14px}
+.source a{color:var(--accent)}
+.build{overflow:hidden;position:relative}.build:before{content:"";position:absolute;inset:-60%;background:linear-gradient(110deg,transparent 45%,rgba(142,183,255,.08) 50%,transparent 55%);animation:shine 5s linear infinite}
+@keyframes shine{to{transform:translateX(40%) rotate(8deg)}}
+.items{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.item{width:58px;height:58px;border-radius:14px;border:1px solid #3a4b64;background:linear-gradient(145deg,#26354a,#121a26);display:grid;place-items:center;font-size:24px;animation:float 2.6s ease-in-out infinite}
+.item:nth-child(2){animation-delay:.15s}.item:nth-child(3){animation-delay:.3s}.item:nth-child(4){animation-delay:.45s}.item:nth-child(5){animation-delay:.6s}.item:nth-child(6){animation-delay:.75s}
+@keyframes float{0%,100%{transform:translateY(0);box-shadow:0 0 0 rgba(142,183,255,0)}50%{transform:translateY(-5px);box-shadow:0 9px 25px rgba(142,183,255,.12)}}
+.combo{display:flex;align-items:center;gap:5px;flex-wrap:wrap;margin-top:10px}.skill{padding:7px 9px;border-radius:9px;background:#1b2637;border:1px solid #32435a;font-weight:700;animation:pulse 1.8s infinite}.arrow{color:#73859e}
+@keyframes pulse{0%,100%{transform:scale(1);opacity:.8}50%{transform:scale(1.06);opacity:1}}
+table{width:100%;border-collapse:collapse;font-size:12px}.tablewrap{overflow:auto}.tablewrap td,.tablewrap th{padding:9px 7px;border-bottom:1px solid var(--line);white-space:nowrap;text-align:left}.tablewrap th{color:var(--muted)}
+.switch{display:flex;align-items:center;justify-content:space-between;gap:10px}.switch input{width:46px;height:24px;accent-color:#7ea9ff}
+progress{width:100%;height:7px}.muted{color:var(--muted)}
+footer{text-align:center;padding:25px;color:#66758b;font-size:11px}
+@media(max-width:600px){.three{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+<h1>⚔️ Wild Rift Meta</h1>
+<div class="sub">KR Insight • V3 • última verificação: 30/09/2026</div>
+</header>
+<nav>
+<button class="active" onclick="tab('overview',this)">Resumo</button>
+<button onclick="tab('kr',this)">🇰🇷 Coreia</button>
+<button onclick="tab('builds',this)">🧩 Builds</button>
+<button onclick="tab('patch',this)">🛠️ Patch 7.3a</button>
+<button onclick="tab('weekly',this)">🔄 Semanal</button>
+</nav>
+<main>
+
+<section id="overview" class="section active">
+<div class="hero"><h2>Meta atual em transição</h2>
+<div>O <b>7.3a</b> foi publicado pela Riot em <b>29/09/2026</b>. Os dados coreanos mais recentes encontrados são de <b>27–28/09</b>, portanto ainda são principalmente uma fotografia pré-7.3a.</div>
+</div>
+<div class="three">
+<div class="card"><div class="muted">KR • Dragão</div><div class="big good">60,1%</div><b>Senna</b><br><span class="pill">6,9% pick</span></div>
+<div class="card"><div class="muted">KR • Topo</div><div class="big good">58,6%</div><b>Malphite</b><br><span class="pill">13,3% pick</span></div>
+<div class="card"><div class="muted">KR • Selva</div><div class="big good">57,9%</div><b>Rammus</b><br><span class="pill">7,5% pick*</span></div>
+</div>
+<div class="notice"><b>O que mudou no 7.3a?</b> Hwei e Senna receberam nerfs; Samira, Tristana, Draven e outros receberam buffs. Rammus e Malphite também foram reduzidos. <span class="warn">Ainda não há amostra suficiente para chamar isso de “meta pós-patch” consolidado.</span></div>
+<div class="source">Fontes: Riot Games, 29/09/2026; RiftCamp, dados de 27–28/09/2026. *A página individual de Rammus atualizada em 28/09 mostra 7,5% pick, enquanto a tabela de 27/09 mostrava 7,0%; o site preserva a data de cada fotografia.</div>
+</section>
+
+<section id="kr" class="section">
+<div class="notice"><b>🇰🇷 Snapshot coreano — Diamante</b><br>Dados gerais da tabela: 27/09/2026; atualização 28/09/2026 11:10 KST.</div>
+<div class="filter">
+<button class="active" onclick="role('Todos',this)">Todos</button><button onclick="role('Topo',this)">Topo</button><button onclick="role('Selva',this)">Selva</button><button onclick="role('Meio',this)">Meio</button><button onclick="role('Inferior',this)">Dragão</button><button onclick="role('Suporte',this)">Suporte</button>
+</div>
+<div class="tablewrap"><table><thead><tr><th>Campeão</th><th>Rota</th><th>WR</th><th>Pick</th><th>Ban</th></tr></thead><tbody id="rows"></tbody></table></div>
+<div class="source">Fonte: <a href="https://riftcamp.gg/pt-BR/data/win-rate" target="_blank">RiftCamp — classificação</a>. A página mostra a data dos dados e a atualização KST. </div>
+</section>
+
+<section id="builds" class="section">
+<div class="notice"><b>Builds com animação</b><br>As caixas abaixo animam a sequência de compra e o combo. Os nomes dos itens são baseados nas descrições de build encontradas; quando a fonte não expõe o nome de cada ícone no texto, não inventei a ordem individual.</div>
+
+<div class="card build"><h3>🟢 Senna — Suporte</h3><div class="muted">Fonte: RiftCamp • referência de build 7.2B • dados estatísticos de 27/09/2026</div>
+<div class="items"><div class="item">🪙</div><div class="item">👁️</div><div class="item">🏹</div><div class="item">🛡️</div><div class="item">✨</div><div class="item">❤️</div></div>
+<p><b>Foco:</b> geração de ouro, visão, suporte e pressão à distância.</p>
+<div class="combo"><span class="skill">Q</span><span class="arrow">→</span><span class="skill">AA</span><span class="arrow">→</span><span class="skill">W</span><span class="arrow">→</span><span class="skill">R</span></div>
+</div>
+
+<div class="card build"><h3>🟠 Rammus — Selva</h3><div class="muted">Fonte: RiftCamp • build recomendada 7.2B • estatísticas de 28/09/2026</div>
+<div class="items"><div class="item">🔥</div><div class="item">🦔</div><div class="item">🧊</div><div class="item">🛡️</div><div class="item">⚔️</div><div class="item">👢</div></div>
+<p><b>Foco documentado:</b> dano/retorno, provocação, entrada rápida e resistência. A fonte cita Fire Crown, Thornmail, Iceborn Gauntlet e itens/efeitos defensivos.</p>
+<div class="combo"><span class="skill">Q</span><span class="arrow">→</span><span class="skill">E</span><span class="arrow">→</span><span class="skill">W</span><span class="arrow">→</span><span class="skill">R</span></div>
+</div>
+
+<div class="card build"><h3>🔵 Malphite — Suporte/engage</h3><div class="muted">Fonte: RiftCamp • build recomendada • referência disponível em 28/09/2026</div>
+<div class="items"><div class="item">⚡</div><div class="item">🧊</div><div class="item">🛡️</div><div class="item">💠</div><div class="item">❤️</div><div class="item">👢</div></div>
+<p><b>Foco documentado:</b> iniciação em área, campos de lentidão e defesa. A fonte cita Zeke's Convergence e Iceborn Gauntlet para o encadeamento da iniciação.</p>
+<div class="combo"><span class="skill">R</span><span class="arrow">→</span><span class="skill">E</span><span class="arrow">→</span><span class="skill">Q</span><span class="arrow">→</span><span class="skill">AA</span></div>
+</div>
+
+<div class="card build"><h3>🟣 Syndra — Meio</h3><div class="muted">Fonte: RiftCamp • estatísticas de 28/09/2026</div>
+<p><b>Combos documentados:</b></p><div class="combo"><span class="skill">Q</span><span class="arrow">→</span><span class="skill">W</span> <span class="muted">poke</span></div>
+<div class="combo"><span class="skill">Q</span><span class="arrow">→</span><span class="skill">E</span> <span class="muted">stun</span></div>
+<div class="combo"><span class="skill">Q</span><span class="arrow">→</span><span class="skill">E</span><span class="arrow">→</span><span class="skill">Q</span><span class="arrow">→</span><span class="skill">W</span><span class="arrow">→</span><span class="skill">R</span></div>
+<p class="muted">O 7.3a alterou o ritmo de aprimoramentos da Syndra, então a build pós-patch deve ser reavaliada quando houver amostra suficiente.</p>
+</div>
+</section>
+
+<section id="patch" class="section">
+<div class="notice"><b>🛠️ Patch 7.3a — oficial</b><br>Publicado pela Riot em 29/09/2026.</div>
+<div class="grid">
+<div class="card"><h3 class="good">Buffs</h3><p><b>Samira:</b> mais vida, resistências e dano.</p><p><b>Tristana:</b> mais AS, salto com menor recarga e mais dano.</p><p><b>Draven:</b> mais dano e velocidade de ataque.</p><p><b>Swain/Viego:</b> ajustes de fortalecimento.</p></div>
+<div class="card"><h3 class="bad">Nerfs</h3><p><b>Hwei:</b> menos dano e escalamento de AP.</p><p><b>Rammus:</b> menos armadura inicial e menor multiplicador do W.</p><p><b>Malphite:</b> menos dano baseado em armadura e ultimate com maior recarga.</p><p><b>Caitlyn/Senna:</b> redução de escalamentos de velocidade/dano.</p></div>
+<div class="card"><h3>Itens e mapa</h3><p><b>Yun Tal:</b> 25% → 35% AS.</p><p><b>Dança da Morte:</b> 3200 → 3300.</p><p><b>Golpear:</b> menor dano base aos monstros.</p><p><b>Nexus:</b> 5500 → 4000 de vida.</p></div>
+</div>
+<div class="source">Fonte oficial: <a href="https://wildrift.leagueoflegends.com/pt-br/news/game-updates/wild-rift-patch-notes-7-3a/" target="_blank">Riot Games — Notas 7.3a</a>, publicada em 29/09/2026.</div>
+</section>
+
+<section id="weekly" class="section">
+<div class="hero"><h2>🔄 Atualização semanal</h2><p>O site foi preparado para trabalhar com um arquivo remoto de dados, permitindo atualizar o conteúdo semanalmente sem reconstruir a interface.</p></div>
+<div class="card">
+<div class="switch"><div><b>Atualização semanal</b><div class="muted">Preferência salva neste aparelho</div></div><input id="weeklyToggle" type="checkbox" checked onchange="saveWeekly()"></div>
+<hr style="border:0;border-top:1px solid #29364a;margin:14px 0">
+<div class="two"><div><span class="muted">Última verificação</span><br><b>30/09/2026</b></div><div><span class="muted">Próxima janela</span><br><b>semanal</b></div></div>
+<p class="muted">No arquivo local, a opção guarda a preferência. Para atualização automática real dos dados, o site precisa ser publicado e conectado a uma fonte/API que permita consulta automática.</p>
+<button onclick="checkNow()">↻ Verificar agora</button>
+<div id="status" class="source"></div>
+</div>
+<div class="card"><b>O que será atualizado</b><p>Patch • buffs/nerfs • WR/pick/ban por rota • builds • runas quando a fonte expuser os dados • tendências coreanas • data e fonte.</p></div>
+</section>
+</main>
+<footer>Wild Rift Meta V3 • Dados separados por fonte e data • Recomendações não são dados oficiais da Riot.</footer>
+<script src="config.js"></script>
+<script>
+const data=[
+['Senna','Inferior','60,1%','6,9%','50,4%'],['Malphite','Topo','58,6%','13,3%','41,3%'],['Rammus','Selva','57,9%','7,0%','5,3%'],['Malphite','Selva','57,8%','1,3%','41,3%'],['Senna','Suporte','56,1%','16,6%','50,4%'],['Shen','Topo','55,8%','2,3%','0,1%'],['Amumu','Selva','55,3%','2,6%','0,1%'],['Nocturne','Selva','55,1%','8,8%','28,8%'],['Syndra','Meio','53,7%','13,6%','34,4%'],['Caitlyn','Inferior','53,1%','40,0%','33,0%']];
+function render(roleName='Todos'){let a=roleName==='Todos'?data:data.filter(x=>x[1]===roleName);document.getElementById('rows').innerHTML=a.map(x=>`<tr><td><b>${x[0]}</b></td><td>${x[1]}</td><td class="good"><b>${x[2]}</b></td><td>${x[3]}</td><td>${x[4]}</td></tr>`).join('')}
+function role(r,b){document.querySelectorAll('.filter button').forEach(x=>x.classList.remove('active'));b.classList.add('active');render(r)}
+function tab(id,b){document.querySelectorAll('.section').forEach(x=>x.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('nav button').forEach(x=>x.classList.remove('active'));b.classList.add('active');scrollTo(0,0)}
+function saveWeekly(){localStorage.setItem('weeklyUpdate',document.getElementById('weeklyToggle').checked?'1':'0');document.getElementById('status').textContent='Preferência salva neste aparelho.'}
+function checkNow(){
+  const url=APP_CONFIG.remoteDataUrl;
+  if(!url){document.getElementById('status').textContent='Configuração pendente: defina remoteDataUrl no config.js para ativar a busca remota.';return}
+  document.getElementById('status').textContent='Tentando consultar a fonte remota…';
+  const controller=new AbortController();
+  const timer=setTimeout(()=>controller.abort(),APP_CONFIG.requestTimeoutMs);
+  fetch(url,{cache:'no-store',signal:controller.signal}).then(r=>{if(!r.ok)throw new Error('HTTP '+r.status);return r.json()}).then(remote=>{
+    localStorage.setItem('wildriftRemoteData',JSON.stringify(remote));
+    localStorage.setItem('wildriftLastUpdate',new Date().toISOString());
+    document.getElementById('status').textContent='Dados remotos atualizados com sucesso em '+new Date().toLocaleString('pt-BR')+'.';
+  }).catch(e=>{document.getElementById('status').textContent=APP_CONFIG.keepLocalDataOnError?'Fonte remota indisponível; os dados locais foram mantidos.':'Não foi possível atualizar os dados.'}).finally(()=>clearTimeout(timer));
+}
+function autoUpdate(){
+  if(!APP_CONFIG.autoUpdate||!APP_CONFIG.remoteDataUrl)return;
+  const last=localStorage.getItem('wildriftLastUpdate');
+  const due=!last || (Date.now()-new Date(last).getTime() >= APP_CONFIG.updateIntervalDays*86400000);
+  if(due)checkNow();
+}
+
+document.getElementById('weeklyToggle').checked=localStorage.getItem('weeklyUpdate')!=='0';render();autoUpdate();
+</script>
+</body></html>
