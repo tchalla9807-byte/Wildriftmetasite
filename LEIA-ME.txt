@@ -1,0 +1,26 @@
+WILD RIFT META V4
+
+Arquivos:
+- index.html: site completo, responsivo e animado.
+- dados.json: dados locais do site.
+- config.js: configurações da atualização automática.
+
+Incluído:
+- Meta coreano por rota.
+- Patch 7.3a oficial.
+- Builds com animações CSS.
+- Sequências de combos animadas.
+- Área de atualização semanal.
+- Configuração separada em config.js.
+- Tentativa de atualização remota a cada 7 dias quando remoteDataUrl estiver configurado.
+- Fallback para os dados locais quando a fonte remota falhar.
+
+COMO ATIVAR A ATUALIZAÇÃO AUTOMÁTICA REAL:
+1. Publique index.html, dados.json e config.js em um endereço HTTPS.
+2. Abra config.js.
+3. Altere remoteDataUrl para o endereço HTTPS do dados.json remoto.
+4. Mantenha updateIntervalDays como 7 para uma atualização semanal.
+5. O navegador verifica a fonte quando o intervalo estiver vencido.
+
+IMPORTANTE:
+O config.js não cria sozinho dados novos. Ele controla quando o site tenta buscar uma versão nova do dados.json. Para gerar dados automaticamente (patch, estatísticas, builds e runas), ainda é necessário um serviço/API ou rotina agendada que atualize o dados.json.
